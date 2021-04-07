@@ -1,4 +1,7 @@
-/* Global selector */
+/**************
+Global selector 
+***************/
+
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +34,7 @@ p {
 
 h2 {
     font-size: 4.8rem;
+    color: white;
 }
 
 h3 {
@@ -100,7 +104,8 @@ nav li {
 .hero {
     min-height: 90vh;
     /* Hero image full-screen */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("/images/landing-page.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), 
+    url("https://images.unsplash.com/photo-1575986767340-5d17ae767ab0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1191&q=80");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -124,7 +129,7 @@ Locations Selcetion
 #locations {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-        url("/images/new-york-page.png");
+        url("https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -151,37 +156,6 @@ Locations Selcetion
     color: white;
 }
 
-.cloud {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-}
-
-.moving-cloud-1 {
-    animation: cloudAnimation 3s infinite alternate ease-in-out;
-}
-
-.moving-cloud-2 {
-    top: 20%;
-    z-index: -1;
-    opacity: 0.5;
-    animation: cloudAnimation 3.5s infinite alternate ease-in-out;
-}
-
-/**************
-Cloud Animation 
-****************/
-
-@keyframes cloudAnimation {
-    from {
-        transform: translate(10%, -10%);
-    }
-
-    to {
-        transform: translate(0%, 0%);
-    }
-}
-
 /**************
 Benefits section
 ****************/
@@ -201,6 +175,7 @@ Benefits section
 .benefits-head h3 {
     padding: 1rem;
 }
+
 
 .cards {
     width: 90%;
@@ -241,7 +216,7 @@ Contact section
 #contact {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url("/images/contact-mountain.png");
+    url("https://images.unsplash.com/photo-1542319282-581e6a85bea6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -350,19 +325,6 @@ Media Queries
 
     #logo {
         padding: 2rem;
-    }
-
-    .cloud {
-        height: 40rem;
-        pointer-events: none;
-    }
-
-    .moving-cloud-1 {
-        z-index: -1;
-    }
-
-    .moving-cloud-2 {
-        z-index: -2;
     }
 
     .locations-head h3 {
